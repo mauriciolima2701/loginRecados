@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styleIndex.css">
+    <link rel="stylesheet" href="./assets/css/styleMsgAlerta.css">
+    <title>Criar conta - Recados</title>
+</head>
+<body>
+    <main>
+        <div class="divMSG"></div>
+
+        <section id="login-container">
+            <h1>- Cadastro de conta -</h1>
+            <hr>
+            <form id="formCadastrar" action="./index.html">
+                <fieldset>
+                    <legend>Dados do usuário</legend>
+
+                    <label for="email">E-mail:</label>
+                    <input class="focoSelecionao" type="email" name="email" id="emailCad" placeholder="Digite seu e-mail aqui" autocomplete="off" required> 
+                    <span class="inputError"></span>
+
+                    <label for="password">Senha:</label>
+                    <input class="focoSelecionao" type="password" name="password" id="passwordCad" placeholder="Digite sua senha aqui" required>
+                    <span class="senhaError"></span>
+
+                    <label for="passwordConfirm">Confirme a senha:</label>
+                    <input class="focoSelecionao" type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Repita sua senha aqui" required>
+
+                    <!-- <button id="botaoCadastrar" type="button"> CADASTRAR </button> -->
+                    <input id="botaoCadastrar" type="button" value="CADASTRAR">
+                    
+                    <input id="botaoCancelar" type="button" value="CANCELAR">
+                    
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+    
+    <script src="./assets/js/sistemaCadastrar.js"></script>
+    <script src="./assets/js/alerta.js"></script>
+</body>
+</html>

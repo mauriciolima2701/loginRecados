@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: Helvetica; */
+    border: none;
+    color: #323232;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/fundoIndexMod.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Esconde o scrool verticarl e horizontal dependendo da Tela do usuário*/
+}
+
+h4{
+    color: #0780bc;
+}
+
+.login{
+    margin-bottom: 30px;
+}
+
+/* Tirar a borda dos inputs */
+input:focus{
+    outline: none;
+}
+
+.criarConta a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #0780bc;
+}
+
+p{
+    margin-bottom: 5px;
+}
+
+.criarConta a:hover{
+    color: aqua;
+    transition: .5s;
+    font-size: 1rem;
+    transition-property: .5s;
+}
+
+hr{
+    margin: 10px auto;
+    width: 200px;
+    border: 1px solid #00082f;
+}
+/* Configurando o container do formulário */
+
+#login-container{
+    background-color: #fff;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15vh;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 10px 15px 15px rgb(24, 23, 23) ;
+}
+
+/* Configurando o Formulário */
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+:placeholder-shown{
+    opacity: 0.4;
+}
+
+label, input{
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+input{
+    border-bottom: 2px solid #00082f;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.focoSelecionao:focus{
+    border-bottom: 2px solid #0780bc;
+    box-shadow: 2px 5px 5px #0780bc;
+}
+
+#botaoLogin{
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0780bc;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#botaoLogin:hover{
+    background-color: aqua;
+    color: #00082f;
+    transition: .5s;
+}
+
+/*######################   Tela de cadastro   #######################*/
+
+#botaoCadastrar{
+    display: inline-block;
+    text-align: center;
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0780bc;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    width: 110px;
+    cursor: pointer;
+}
+
+#botaoCadastrar:hover{
+    background-color: aqua;
+    color: #00082f;
+    transition: .5s;
+}
+
+#botaoCancelar{
+    display: inline-block;
+    text-align: center;
+    border: none;
+    height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #8a8b8c;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    /* margin-top: 30px; */
+    width: 110px;
+    cursor: pointer;
+}
+
+#botaoCancelar:hover{
+    background-color: #F09A32;
+    color: #00082f;
+    transition: .5s;
+}
+
+
+

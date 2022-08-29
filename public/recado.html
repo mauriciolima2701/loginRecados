@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styleRecado.css">
+    <link rel="stylesheet" href="./assets/css/styleModal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Seus recados</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <img class="task" src="./assets/img/task.svg" alt="" srcset="">
+            <h1 class="bemVindo">Bem-vindo ao sistema, <span id="mostrarNomeUser"> </span> </h1>
+            <hr>
+            
+                <button id="btnSairRecados" type="button">SAIR </button>
+              
+            <div id="recados">
+                <h2>- MEUS RECADOS -</h2>
+                <form id="form" action="">
+                <input id="descricao" class="descricao focoSelecionado" type="text" placeholder="Descrição ...." autocomplete="off" required>
+                
+                <input id="detalhamento" class="detalhamento focoSelecionado" type="text" placeholder="Detalhamento ... " autocomplete="off" required>
+                                
+                <input type="button" id="btnSalvarRecado" value="ADICIONAR">
+
+                <p id="infoValidacao"></p>
+
+                </form>
+                <table id="tableRecado">
+                    <thead>
+                        <tr>
+                            <th class="idTable">#</th>
+                            <th class="descricaoTable">Descrição</th>
+                            <th class="detalhesTable">Detalhes</th>
+                            <th class="acaoTable" colspan="2">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td> 1 </td>
+                            <td> Aqui vai a descricao </td>
+                            <td> Aqui vai o detalhes </td>
+                            <td><button id="editarRecadoModal" type="button"><i class="fa-solid fa-file-pen iconEdit"></i> </button></td>
+                            <td><button id="excluirRecado" type="button"><i class="fa-solid fa-trash-can iconRemove"></i> </button></td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- ##########  MODAL - Editar Recados  ######## -->
+            <div id="fade" class="esconder"></div>
+            
+            <div id="modal" class="esconder">
+               
+                <div class="modal-cabecalho">
+                   
+                    <img src="./assets/img/editTask.svg" alt="Editando tarefas">
+                    
+                    <h2>EDITANDO RECADO ... </h2>
+                    
+                    <i id="fecharModal" class="fa-solid fa-circle-xmark"></i>
+                </div>
+
+                <div class="modal-corpo">
+                    <form action="">
+                        <label class="labelModal" for="descricaoModal">Descrição:</label>
+                            <input id="descricaoModal" class="descricao-modal inputModal" type="text" autocomplete="off">
+
+                        <label class="labelModal" for="detalheModal">Detalhes:</label>    
+                            <input id="detalheModal" class="detalhe-modal inputModal" type="text" autocomplete="off">
+
+                        <button id="btnModalSalvar" type="button">GRAVAR</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="./assets/js/sistemaRecado.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="https://kit.fontawesome.com/79704f5c5a.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

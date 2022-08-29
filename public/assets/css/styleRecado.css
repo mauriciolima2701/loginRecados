@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: Helvetica; */
+    color: #323232;
+    border: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/fundoRecadosMod.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Esconde o scrool verticarl e horizontal dependendo da Tela do usuário*/
+}
+
+.container{
+    position: relative;
+    /* width: 60vw; */
+    max-width: 60vmax;
+    height: 80vh;
+    top: 10vh;
+    background-color: #f8f8f8;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 10px 15px 15px rgb(24, 23, 23) ;
+}
+
+hr{
+    position: absolute;
+    width: 450px;
+    border: 3px solid #0780bc;
+    margin: 80px;
+    left: 150px;    
+}
+
+.task{
+    position: absolute;
+    width: 200px;
+    margin: 15px;
+    left: 20px;
+}
+
+.bemVindo{
+    position: absolute;
+    margin-top: 25px;
+    left: 230px;
+    font-size: 1.9rem;
+    min-width: 24ch;   
+}
+
+#mostrarNomeUser{
+    color: #0780bc;
+}
+
+#recados{
+    position: relative;
+    margin: 0 auto;
+    top: 10vh;
+    width: 55vw;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background: linear-gradient(to right, #7ab9e4, #6dd5fa, #ffffff);    */
+}
+
+.focoSelecionado:focus{
+    outline: none;
+    border-bottom: 2px solid #0780bc;
+    box-shadow: 2px 5px 5px #0780bc;
+}
+
+
+h2{
+    text-align: center;
+    padding: 15px;
+}
+
+.descricao{
+    background-color: rgba(238, 238, 238, 0.800);
+    border-bottom: 2px solid #00082f;
+    margin: 10px;
+    padding: 8px;
+    width: 12vw;
+}
+
+.detalhamento{
+    background-color: rgba(238, 238, 238, 0.800);
+    border-bottom: 2px solid #00082f;
+    margin: 10px;
+    padding: 8px;
+    width: 25vw;
+}
+
+#btnSalvarRecado{
+    height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0780bc;
+    width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btnSalvarRecado:hover{
+    background-color: aqua;
+    color: #00082f;
+    transition: .5s;
+}
+
+#btnSairRecados{
+    /* position: absolute; */
+    height: 35px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #8a8b8c;
+    margin-top: 15px;
+    /* left: 53vw; */
+    margin-left: 53vw;
+    width: 80px;
+    cursor: pointer;
+}
+
+#btnSairRecados:hover{
+    background-color: #F09A32;
+    color: #00082f;
+    transition: .5s;
+}
+
+/* ################# TABELA DE RECADOS ################# */
+
+table{
+    text-align: center;
+    margin-top: 10px;
+    width: 55vw;
+    /* height: 80%; */
+    /* border-collapse: collapse; */
+}
+
+tr, td{
+   font-size: .9em;
+   padding: 8px 0;
+}
+
+/* Para deixar as linhas da tabela com background tipo zebra*/
+tr:nth-child(even){ 
+    background-color: rgb(238, 238, 238);
+}
+
+thead th{
+    background-color: #8a8b8c;
+    color: #ffff;
+}
+
+.idTable{
+    width: 1vw;
+}
+
+.descricaoTable{
+    width: 12vw;
+}
+
+.acaoTable{
+    width: 10px;
+}
+
+.iconEdit, .iconRemove{
+    font-size: 1.5rem;
+}
+
+.iconEdit{
+    color: green;
+}
+
+.iconRemove{
+    color: red;
+    
+}
+
+.iconEdit:hover{
+    color: rgb(51, 183, 51);
+}
+
+.iconRemove:hover{
+    color: #F09A32;
+}

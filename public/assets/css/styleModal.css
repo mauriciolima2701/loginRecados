@@ -1,0 +1,105 @@
+
+#modal{
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 1.4rem;
+    width: 520px;
+    max-width: 90%;
+    /* height: 300px; */
+    padding: 1.1rem;
+}
+
+#modal.esconder{
+    top: 0;
+}
+
+/* Quando a opacidade estiver 1 ocorrer o click nos botoes, antes não */
+#fade, #modal{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Pointer-events = Não ter eventos de cliques no modal */
+#modal.esconder,
+#fade.esconder{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+.modal-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0780bc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-cabecalho > img{
+    width: 120px;
+    margin-right: -65px;
+}
+
+.modal-cabecalho > h2{
+    color: #0780bc;
+}
+
+.modal-corpo{
+    width: 100%;
+    text-align: center;
+}
+
+.labelModal, .inputModal{
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.inputModal{
+    border-bottom: 2px solid #00082f;
+    padding: 10px;
+    margin-bottom: 40px;
+
+}
+
+#btnModalSalvar{
+    height: 35px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0780bc;
+    width: 80px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btnModalSalvar:hover{
+    background-color: aqua;
+    color: #00082f;
+    transition: .5s;
+}
+
+i{
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+#fecharModal:hover{
+    color: #F09A32;
+}
+
+

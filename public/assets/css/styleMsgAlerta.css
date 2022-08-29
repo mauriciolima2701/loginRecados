@@ -1,0 +1,47 @@
+.alerta{
+    background-color: rgb(255, 253, 253);
+    border-radius: 5px;
+    width: 350px;
+    height: 120px;
+    z-index: 100;
+    position: fixed;
+    top: 1%;
+    left: 45%;
+    text-align: center;
+    padding: 30px 15px;
+    color: #0780bc;
+    animation: slide 4s cubic-bezier(0, 0, 0, 1) both;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.alerta::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 8px;
+    background-color: rgba(49, 206, 107, 0.6);
+    animation: time 4s forwards;
+}
+
+@keyframes time{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
